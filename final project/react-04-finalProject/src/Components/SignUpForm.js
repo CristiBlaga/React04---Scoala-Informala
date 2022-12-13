@@ -50,7 +50,7 @@ function RegisterAndLogIn() {
           <h2>Create an account</h2>
           <form onSubmit={handleClick}>
             <div className="input_space">
-              <input placeholder="Name" type="text" ref={name} />
+              <input autoFocus placeholder="Name" type="text" ref={name} />
             </div>
             <div className="input_space">
               <input placeholder="Email" type="email" ref={email} />

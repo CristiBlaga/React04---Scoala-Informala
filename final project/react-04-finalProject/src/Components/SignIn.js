@@ -24,7 +24,7 @@ export default function SignIn() {
         <h4>Hello {localName}</h4>
         <form onSubmit={handleSignIn}>
           <div className="input_space">
-            <input placeholder="Email" type="email" ref={email} />
+            <input autoFocus placeholder="Email" type="email" ref={email} />
           </div>
           <div className="input_space">
             <input placeholder="Password" type="password" ref={password} />

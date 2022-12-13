@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Episode({ episode }) {
   return (
     <Link
-      style={{ textDecoration: "none" }}
+      style={{ textDecoration: "none", color: "black" }}
       to={`${episode.id}`}
       className="episode-item"
       key={episode.id}
@@ -17,7 +17,6 @@ function Episode({ episode }) {
           <br />
           Episode: {episode.episode}
         </div>
-        <div className="card-button"></div>
       </div>
     </Link>
   );

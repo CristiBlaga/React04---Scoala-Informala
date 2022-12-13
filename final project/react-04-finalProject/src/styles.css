@@ -23,11 +23,11 @@ h2 {
   padding-left: 5px;
 }
 h3 {
-  color: aliceblue;
+  color: black;
   margin: 15% 40%;
 }
 h4 {
-  color: aliceblue;
+  color: black;
   margin: 15% 40%;
 }
 li {
@@ -47,19 +47,6 @@ a {
   justify-content: center;
   gap: 1rem;
 }
-/* .form-body {
-  text-align: left;
-  padding: 20px 10px;
-} */
-
-/* .form-body > * {
-  padding: 5px;
-}
-
-.form__label {
-  width: 500px;
-} */
-
 .input_space {
   margin: 10px;
 }
@@ -104,8 +91,22 @@ form {
 }
 .filter {
   text-transform: capitalize;
-  color: aliceblue;
+  color: black;
 }
 select {
   border-radius: 5px;
+}
+.episode-details-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50, -50);
+}
+.episode-details-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
 }

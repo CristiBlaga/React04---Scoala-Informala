@@ -11,12 +11,12 @@ function Episodes() {
   useEffect(() => {
     dispatch(fetchAllEpisodes());
   }, [dispatch]);
-  let id = { episodes };
+  // let id = { episodes };
   const maxPageValue = Array.from({ length: 3 }, (_, i) => i + 1);
   const newPage = (pageValue) => {
     dispatch(fetchAllEpisodes(pageValue));
   };
-  const localName = localStorage.getItem("name");
+
   const logout = () => {
     localStorage.removeItem("signUp");
     window.location.reload();
@@ -28,7 +28,7 @@ function Episodes() {
   return (
     <div className="container">
       <div className="episode-header">
-        <h2>Hello {localName}</h2>
+        <h1>Rick and Morty Episodes</h1>
 
         <h3>Total 51, Select Page Number From Dropdown List to Navigate</h3>
       </div>
@@ -52,7 +52,7 @@ function Episodes() {
             <Episode
               key={episode.id}
               episode={episode}
-              id={id}
+              id={episode.id}
               page="/episodes/"
             />
           ))}
