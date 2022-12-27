@@ -13,7 +13,7 @@ export default function SignIn() {
       password.current.value === localPassword
     ) {
       localStorage.setItem("signUp", email.current.value);
-      window.location.reload();
+      window.location.href = "./episodes";
     } else {
       alert("Please enter a valid password and email");
     }

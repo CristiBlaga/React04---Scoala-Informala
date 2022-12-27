@@ -3,9 +3,11 @@ import EpisodeDetails from "../Components/episodeDetails";
 import SignUp from "../Components/SignUpForm";
 import SignIn from "../Components/SignIn";
 import Episodes from "../Components/episodes";
+import Navbar from "../Components/navbar";
 
 export default (
   <Router>
+    <Navbar />
     <Routes>
       <Route path="/" element={<SignUp />} />
       <Route path="/signUp" element={<SignUp />} />
